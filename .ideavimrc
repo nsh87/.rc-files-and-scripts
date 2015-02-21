@@ -1,0 +1,11 @@
+"noremap l h
+"noremap ; l
+"noremap h ;
+
+"imap jj <Esc> 
+
+"set tabstop=4
+"set shiftwidth=4
+"set expandtab
+
+source ~/.vimrc
