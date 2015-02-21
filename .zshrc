@@ -58,7 +58,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
-#MY_SCRIPTS=$(python -c "import os; print os.path.join(os.path.realpath('${(%):-%x}'), '..', 'scripts')")
 # export MANPATH="/usr/local/man:$MANPATH"
 # Use one of the two lines below to use Enthought
 export PATH=/$HOME/Library/Enthought/Canopy_64bit/User/bin:$PATH
