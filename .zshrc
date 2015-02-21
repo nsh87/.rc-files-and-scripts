@@ -11,8 +11,6 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias path='. ~/dev/terminal/getdirfilepath.sh'
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -60,13 +58,19 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
+#MY_SCRIPTS=$(python -c "import os; print os.path.join(os.path.realpath('${(%):-%x}'), '..', 'scripts')")
 # export MANPATH="/usr/local/man:$MANPATH"
 # Use one of the two lines below to use Enthought
 export PATH=/$HOME/Library/Enthought/Canopy_64bit/User/bin:$PATH
 # VIRTUAL_ENV_DISABLE_PROMPT=1 source $HOME/Library/Enthought/Canopy_64bit/User/bin/activate
+my_scripts=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}');
+print zshrc_path[:-6]+'scripts/'")
+export PATH=$PATH:$my_scripts
 
 # Powerline
 # . /Users/Nikhil/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+
+alias path='. getdirfilepath.sh'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
