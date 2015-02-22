@@ -5,7 +5,7 @@
 # Get path of this script
 BASEDIR=$(pwd)
 
-echo "(1/3): Making backups."
+echo "(1/4): Making backups."
 # Check for existing backups and remove them
 if [ -e ~/.vimrc_backup ];
 then
@@ -44,13 +44,17 @@ then
     rm -rf ~/.vim/bundle
 fi
 
-echo "(2/3): Symlinking ~/**.rc files."
+echo "(2/4): Symlinking ~/**.rc files."
 ln -s $BASEDIR/.vimrc ~/.vimrc
 ln -s $BASEDIR/.zshrc ~/.zshrc
 ln -s $BASEDIR/.ideavimrc ~/.ideavimrc
 # Symlink Pathogen bundles
-echo "(3/3): Symlinking Vim Pathogen bundles."
+echo "(3/4): Symlinking Vim Pathogen bundles."
 ln -s $BASEDIR/vim-bundles ~/.vim/bundle
+
+# Install Pathogen bundles
+echo "(4/4): Installing Pathogen bundles."
+git submodule update --recursive
 
 echo "Done!"
 exit 0
