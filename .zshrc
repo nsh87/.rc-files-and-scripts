@@ -73,7 +73,7 @@ export PATH=$PATH:$my_scripts
 # . /Users/Nikhil/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Aliases
-alias gamsg='git add -all; git commit -m '
+alias gamsg='git add --all; git commit -m '
 alias path='. getdirfilepath.sh'
 
 # You may need to manually set your language environment
