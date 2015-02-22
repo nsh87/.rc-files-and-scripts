@@ -2,9 +2,29 @@
 
 # Install the .*rc files
 
+# Get path of this script
 BASEDIR=$(pwd)
 
 echo "Backing up existing files..."
+# Check for existing backups and remove them
+if [ -e ~/.vimrc_backup ];
+then
+    rm ~/.vimrc_backup
+fi
+if [ -e ~/.zshrc_backup ];
+then
+    rm ~/.zshrc_backup
+fi
+if [ -e ~/.ideavimrc_backup ];
+then
+    rm ~/.idevimrc_backup
+fi
+if [ -d ~/.vim/bundle_backup ];
+then
+    rm -rf ~/.vim/bundle_backup
+fi
+
+# Make backups
 if [ -e ~/.vimrc ];
 then
     mv ~/.vimrc ~/.vimrc_backup
@@ -17,11 +37,19 @@ if [ -e ~/.ideavimrc ];
 then
     mv ~/.ideavimrc ~/.ideavimrc_backup
 fi
+# Backup existing Vim Pathogen bundles
+if [ -d ~/.vim/bundle ];
+then
+    cp -rp ~/.vim/bundle ~/.vim/bundle_backup
+    rm -rf ~/.vim/bundle
+fi
 
 echo "Symlinking ~/**.rc files to files in this repo..."
 ln -s $BASEDIR/.vimrc ~/.vimrc
 ln -s $BASEDIR/.zshrc ~/.zshrc
 ln -s $BASEDIR/.ideavimrc ~/.ideavimrc
+# Symlink Pathogen bundles
+ln -s $BASEDIR/vim-bundles ~/.vim/bundle
 
 echo "Done!"
 exit 0
