@@ -8,6 +8,14 @@ filetype plugin indent on
 
 imap jj <Esc>
 
+" Tab switching curser in Vim split windows
+nnoremap <tab> <C-w>
+nnoremap <tab><tab> <C-w><C-w>
+
+" Try to make Ctrl-O easier on Kinesis keyboard
+":inoremap <Alt> <C>
+":inoremap <Alt> <C>
+
 :set tabstop=4
 :set shiftwidth=4
 :set expandtab
@@ -16,14 +24,14 @@ imap jj <Esc>
 
 set relativenumber
 set number
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 "Set margin to 80 on certain file types, like .md
 "au BufRead,BufNewFile *.md setlocal textwidth=80
 :set formatoptions+=t
 :set textwidth=80
 :set wrapmargin=2
-"Autofit text with gqG, gq}, or just gq on highlighted text
+"Autofit text with gqG, gq}, or just gq on highlighted text in Vim
 
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
