@@ -54,7 +54,7 @@ ln -s $BASEDIR/vim-bundles ~/.vim/bundle
 
 # Install Pathogen bundles
 echo "(4/4): Installing Pathogen bundles."
-git submodule foreach git submodule update --recursive
+git submodule init; git submodule foreach git submodule update --recursive
 
 echo "(4/4): Done!"
 exit 0
