@@ -75,6 +75,7 @@ export PATH=$PATH:$my_scripts
 # Aliases
 alias gamsg='git add --all; git commit -m '
 alias path='. getdirfilepath.sh'
+alias vls='ls -al'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
