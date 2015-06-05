@@ -13,3 +13,6 @@
 [submodule "vim-bundles/vim-surround"]
 	path = vim-bundles/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "vim-bundles/vim-javascript"]
+    path = vim-bundles/vim-javascript
+    url = git://github.com/pangloss/vim-javascript.git
