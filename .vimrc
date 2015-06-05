@@ -64,6 +64,18 @@ function GetGooglePythonIndent(lnum)
   return GetPythonIndent(a:lnum)
 endfunction
 
+" Turn on HTML/CSS syntax highlighting in JS files
+let g:javascript_enable_domhtmlcss = 1
+" Turn on JS code folding
+augroup jsfolding
+  autocmd!
+  autocmd FileType javascript setlocal foldenable|setlocal foldmethod=syntax
+augroup END
+
+" Save folds upon quit and auto load them on open
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 let pyindent_nested_paren="&sw-1"
 let pyindent_open_paren="&sw-1"
 
