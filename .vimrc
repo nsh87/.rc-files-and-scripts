@@ -75,6 +75,7 @@ augroup END
 " Save folds upon quit and auto load them on open
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+set viewoptions-=options
 
 let pyindent_nested_paren="&sw-1"
 let pyindent_open_paren="&sw-1"
