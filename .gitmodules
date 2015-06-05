@@ -16,3 +16,6 @@
 [submodule "vim-bundles/vim-javascript"]
     path = vim-bundles/vim-javascript
     url = git://github.com/pangloss/vim-javascript.git
+[submodule "vim-bundles/jshint.vim"]
+    path = vim-bundles/jshint.vim
+    url = git://github.com/wookiehangover/jshint.vim
