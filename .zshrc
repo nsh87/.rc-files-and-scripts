@@ -93,3 +93,6 @@ alias vls='ls -al'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
+
+# added by travis gem
+[ -f /Users/Nikhil/.travis/travis.sh ] && source /Users/Nikhil/.travis/travis.sh
