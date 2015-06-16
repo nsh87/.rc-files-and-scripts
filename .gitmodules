@@ -19,3 +19,6 @@
 [submodule "vim-bundles/jshint.vim"]
     path = vim-bundles/jshint.vim
     url = git://github.com/wookiehangover/jshint.vim
+[submodule "vim-bundles/R-Vim-runtime"]
+    path = vim-bundles/R-Vim-runtime
+    url = git://github.com/jalvesaq/R-Vim-runtime
