@@ -1,6 +1,8 @@
 execute pathogen#infect()
 syntax on
+syntax enable
 filetype plugin indent on
+set nocompatible
 
 "noremap l h
 "noremap ; l
@@ -72,6 +74,17 @@ augroup jsfolding
   autocmd FileType javascript setlocal foldenable|setlocal foldmethod=syntax
 augroup END
 
+" Turn on JS linting in real-time (change to 1 to do on write only)
+let JSHintUpdateWriteOnly=0
+
+" Turn on R syntax highlighting
+augroup rfolding
+  au!
+  au BufReadPost *.{R,r} setlocal foldenable|setlocal foldmethod=syntax
+augroup END
+set foldlevelstart=1
+let r_syntax_folding=1
+
 " Save folds upon quit and auto load them on open
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
@@ -108,7 +121,6 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-syntax enable
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
