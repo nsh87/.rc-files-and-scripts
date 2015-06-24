@@ -1,7 +1,8 @@
 execute pathogen#infect()
 syntax on
 syntax enable
-filetype plugin indent on
+filetype plugin on
+filetype indent on
 set nocompatible
 
 "noremap l h
@@ -26,7 +27,8 @@ nnoremap <tab><tab> <C-w><C-w>
 
 set relativenumber
 set number
-set clipboard+=unnamedplus
+"Using the line below causing 'yank' to not work properly
+"set clipboard+=unnamedplus
 
 "Set margin to 80 on certain file types, like .md
 "au BufRead,BufNewFile *.md setlocal textwidth=80
@@ -80,10 +82,12 @@ let JSHintUpdateWriteOnly=0
 " Turn on R syntax highlighting
 augroup rfolding
   au!
-  au BufReadPost *.{R,r} setlocal foldenable|setlocal foldmethod=syntax
+  au BufReadPost *.{R,r} setlocal foldenable|setlocal foldmethod=syntax tabstop=2 shiftwidth=2
 augroup END
 set foldlevelstart=1
 let r_syntax_folding=1
+" Don't convert _ to <-, instead type _ twice to get <-
+let vimrplugin_assign=2
 
 " Save folds upon quit and auto load them on open
 autocmd BufWinLeave *.* mkview
