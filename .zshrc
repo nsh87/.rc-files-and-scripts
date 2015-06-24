@@ -61,14 +61,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 # Use one of the two lines below to use Enthought
-export PATH=/$HOME/Library/Enthought/Canopy_64bit/User/bin:$PATH
+export PATH=$HOME/Library/Enthought/Canopy_64bit/User/bin:$PATH
 # VIRTUAL_ENV_DISABLE_PROMPT=1 source $HOME/Library/Enthought/Canopy_64bit/User/bin/activate
 # MONGODB: Use the below to add MongoDB's bin to PATH
 export PATH="$PATH:/usr/local/mongodb/bin"
-my_scripts=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}');
-print zshrc_path[:-6]+'scripts/'")
+my_scripts=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}'); print zshrc_path[:-6]+'scripts/'")
 export PATH=$PATH:$my_scripts
-export PATH="$PATH:/Users/Nikhil/.chefdk/gem/ruby/2.1.0/bin"
 
 # Powerline
 # . /Users/Nikhil/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
