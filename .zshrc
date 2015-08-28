@@ -65,7 +65,7 @@ export PATH=$HOME/Library/Enthought/Canopy_64bit/User/bin:$PATH
 # VIRTUAL_ENV_DISABLE_PROMPT=1 source $HOME/Library/Enthought/Canopy_64bit/User/bin/activate
 # MONGODB: Use the below to add MongoDB's bin to PATH
 export PATH="$PATH:/usr/local/mongodb/bin"
-my_scripts=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}'); print zshrc_path[:-6]+'scripts/'")
+my_scripts=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}'); print zshrc_path[:-6]+'scripts'")
 export PATH=$PATH:$my_scripts
 
 # Powerline
