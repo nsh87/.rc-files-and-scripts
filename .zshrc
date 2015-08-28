@@ -58,7 +58,7 @@ plugins=(git virtualenvwrapper python)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 # Use one of the two lines below to use Enthought
 export PATH=$HOME/Library/Enthought/Canopy_64bit/User/bin:$PATH
