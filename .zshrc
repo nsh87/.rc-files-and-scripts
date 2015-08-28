@@ -75,6 +75,8 @@ export PATH=$PATH:$my_scripts
 alias gamsg='git add --all; git commit -m '
 alias path='. getdirfilepath.sh'
 alias vls='ls -al'
+alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias stoppostgres='pg_ctl -D /usr/local/var/postgres stop'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
