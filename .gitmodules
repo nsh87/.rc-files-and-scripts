@@ -22,3 +22,12 @@
 [submodule "vim-bundles/R-Vim-runtime"]
     path = vim-bundles/R-Vim-runtime
     url = git://github.com/jalvesaq/R-Vim-runtime
+[submodule "vim-bundles/vim-pandoc"]
+    path = vim-bundles/vim-pandoc
+    url = git://github.com/vim-pandoc/vim-pandoc
+[submodule "vim-bundles/vim-pandoc-syntax"]
+    path = vim-bundles/vim-pandoc-syntax
+    url = git://github.com/vim-pandoc/vim-pandoc-syntax
+[submodule "vim-bundles/vim-rmarkdown"]
+    path = vim-bundles/vim-rmarkdown
+    url = git://github.com/vim-pandoc/vim-rmarkdown
