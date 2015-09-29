@@ -94,6 +94,9 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 set viewoptions-=options
 
+" Vim-Pandoc-Syntax: turn off concealing for certain things
+let g:pandoc#syntax#conceal#blacklist = ['titleblock', 'block']
+
 let pyindent_nested_paren="&sw-1"
 let pyindent_open_paren="&sw-1"
 
