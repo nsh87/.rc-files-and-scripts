@@ -11,6 +11,9 @@ set nocompatible
 
 imap jj <Esc>
 
+" Set timeout of Esc key so it doesn't delay
+set timeoutlen=1000 ttimeoutlen=0
+
 " Tab switching curser in Vim split windows
 nnoremap <tab> <C-w>
 nnoremap <tab><tab> <C-w><C-w>
