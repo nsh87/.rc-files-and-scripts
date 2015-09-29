@@ -31,3 +31,6 @@
 [submodule "vim-bundles/vim-rmarkdown"]
     path = vim-bundles/vim-rmarkdown
     url = git://github.com/vim-pandoc/vim-rmarkdown
+[submodule "vim-bundles/vim-easymotion"]
+    path = vim-bundles/vim-easymotion
+    url = git://github.com/easymotion/vim-easymotion
