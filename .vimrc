@@ -19,6 +19,7 @@ imap jj <Esc>
 
 " Change leader to comma
 let mapleader=","
+map <Leader> <Plug>(easymotion-prefix)
 
 " Set timeout of Esc key so it doesn't delay
 set timeoutlen=1000 ttimeoutlen=0
