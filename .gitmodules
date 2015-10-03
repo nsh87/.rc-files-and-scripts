@@ -31,3 +31,9 @@
 [submodule "vim-bundles/vim-rmarkdown"]
     path = vim-bundles/vim-rmarkdown
     url = git://github.com/vim-pandoc/vim-rmarkdown
+[submodule "vim-bundles/jedi-vim"]
+    path = vim-bundles/jedi-vim
+    url = git://github.com/davidhalter/jedi-vim
+[submodule "vim-bundles/supertab"]
+    path = vim-bundles/supertab
+    url = git://github.com/ervandew/supertab

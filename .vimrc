@@ -9,6 +9,9 @@ set nocompatible
 "noremap ; l
 "noremap h ;
 
+" Supertab
+let g:SuperTabDefaultCompletionType="context"
+
 imap jj <Esc>
 
 " Set timeout of Esc key so it doesn't delay
