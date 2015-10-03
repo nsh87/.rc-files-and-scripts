@@ -12,6 +12,9 @@ set nocompatible
 " Supertab
 let g:SuperTabDefaultCompletionType="context"
 
+" CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 imap jj <Esc>
 
 " Set timeout of Esc key so it doesn't delay
