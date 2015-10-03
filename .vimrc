@@ -17,6 +17,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 imap jj <Esc>
 
+" Change leader to comma
+let mapleader=","
+
 " Set timeout of Esc key so it doesn't delay
 set timeoutlen=1000 ttimeoutlen=0
 
