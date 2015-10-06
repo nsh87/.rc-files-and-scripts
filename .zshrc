@@ -10,6 +10,8 @@ alias path='. getdirfilepath.sh'
 alias vls='ls -al'
 alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stoppostgres='pg_ctl -D /usr/local/var/postgres stop'
+alias zshrc='vi ~/.zshrc'
+alias vimrc='vi ~/.vimrc'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
