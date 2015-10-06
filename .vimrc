@@ -52,6 +52,10 @@ set number
 
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+"""" JEDI-VIM """"
+" Disable docstring windows popup on completion
+autocmd FileType python setlocal completeopt-=preview
+
 " Indent Python in the Google way.
 :match ErrorMsg '\%>80v.\+'
 au BufRead,BufNewFile *.py setlocal indentexpr=GetGooglePythonIndent(v:lnum)
