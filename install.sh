@@ -56,6 +56,8 @@ ln -s $BASEDIR/vim-bundles ~/.vim/bundle
 echo "(4/4): Installing Pathogen bundles."
 git submodule init
 git submodule update --recursive
+cd $BASEDIR/vim-bundles/jedi-vim
+git submodule update --init
 
 echo "(4/4): Done!"
 exit 0
