@@ -53,8 +53,11 @@ set number
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 """" JEDI-VIM """"
-" Disable docstring windows popup on completion
+"Disable docstring windows popup on completion
 autocmd FileType python setlocal completeopt-=preview
+"Move call signature popup to bottom of Vim window instead of inline 
+:set noshowmode  " Required to get this to work in MacVim
+let g:jedi#show_call_signatures = 2
 
 " Indent Python in the Google way.
 :match ErrorMsg '\%>80v.\+'
