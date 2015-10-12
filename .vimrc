@@ -52,6 +52,10 @@ set number
 
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+"""" VIM """"
+"Hide certain extensions in Vim's native file browser (netrw)
+let g:netrw_list_hide= ['.*\.sw[o|p]$', '.*\.pyc$']
+
 """" JEDI-VIM """"
 "Disable docstring windows popup on completion
 autocmd FileType python setlocal completeopt-=preview
