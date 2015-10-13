@@ -36,7 +36,7 @@ plugins=(git virtualenvwrapper python autojump autopep8 brew dirhistory fabric j
 source $ZSH/oh-my-zsh.sh
 
 # PATH configuration
-DEFAULT=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin
+DEFAULT=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin
 GIT=/usr/local/git/bin
 CANOPY=$HOME/Library/Enthought/Canopy_64bit/User/bin
 MONGODB=/usr/local/mongodb/bin
