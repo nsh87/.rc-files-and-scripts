@@ -43,3 +43,6 @@
 [submodule "vim-bundles/vim-easymotion"]
     path = vim-bundles/vim-easymotion
     url = git://github.com/easymotion/vim-easymotion
+[submodule "vim-bundles/vim-json"]
+    path = vim-bundles/vim-json
+    url = git://github.com/elzr/vim-json
