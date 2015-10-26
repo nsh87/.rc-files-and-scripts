@@ -1,0 +1,41 @@
+snippet khv
+        "${1}": {
+                ${2}
+        }
+
+snippet kv
+        "${1}": "${2}"
+
+snippet s
+        "${1}": {
+                "type": "string"
+        }
+
+snippet t
+        "${1}": {
+                "type": "time"
+        }
+
+snippet a
+        "${1}": {
+                "type": "array"
+        }
+
+snippet object
+        "${1}": {
+                "type": "object",
+                "properties": {
+                  ${2}
+                }
+        }
+
+snippet oarray
+        "${1}": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                        "properties": {
+                                ${2}
+                        }
+                }
+        }
