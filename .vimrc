@@ -52,6 +52,13 @@ set number
 
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+"""" VIM-JSON """"
+" Turn on code folding
+augroup jsonfolding
+  autocmd!
+  autocmd FileType json setlocal foldenable|setlocal foldmethod=syntax
+augroup END
+
 """" VIM """"
 "Hide certain extensions in Vim's native file browser (netrw)
 let g:netrw_list_hide= ['.*\.sw[o|p]$', '.*\.pyc$']

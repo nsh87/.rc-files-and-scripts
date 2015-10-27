@@ -46,6 +46,9 @@
 [submodule "vim-bundles/vim-json"]
     path = vim-bundles/vim-json
     url = git://github.com/elzr/vim-json
+[submodule "vim-bundles/vim-jdaddy"]
+    path = vim-bundles/vim-jdaddy
+    url = git://github.com/tpope/vim-jdaddy
 [submodule "vim-bundles/tlib_vim"]
     path = vim-bundles/tlib_vim
     url = git://github.com/tomtom/tlib_vim.git
