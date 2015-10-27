@@ -1,41 +1,47 @@
-snippet khv
-        "${1}": {
-                ${2}
-        }
+snippet ob
+	"${1}": ${2}
 
-snippet kv
-        "${1}": "${2}"
+snippet obn
+	"${1}": {
+		${2}
+	}{$3}
+
+snippet arro
+	[
+		"{$1}": ${2}
+		${3}
+	]
 
 snippet s
-        "${1}": {
-                "type": "string"
-        }
+	"${1}": {
+		"type": "string"
+	}
 
 snippet t
-        "${1}": {
-                "type": "time"
-        }
+	"${1}": {
+		"type": "time"
+	}
 
 snippet a
-        "${1}": {
-                "type": "array"
-        }
+	"${1}": {
+		"type": "array"
+	}
 
 snippet object
-        "${1}": {
-                "type": "object",
-                "properties": {
-                  ${2}
-                }
-        }
+	"${1}": {
+		"type": "object",
+		"properties": {
+			${2}
+		}
+	}
 
 snippet oarray
-        "${1}": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                        "properties": {
-                                ${2}
-                        }
-                }
-        }
+	"${1}": {
+		"type": "array",
+		"items": {
+			"type": "object",
+			"properties": {
+				${2}
+			}
+		}
+	}

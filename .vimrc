@@ -52,6 +52,8 @@ set number
 
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+let g:SuperTabDefaultCompletionType="context"
+
 """" VIM-JSON """"
 " Turn on code folding
 augroup jsonfolding
