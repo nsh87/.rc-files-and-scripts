@@ -1,17 +1,27 @@
+# Inner components of object
 snippet ob
 	"${1}": ${2}
-
+# Object wrapped with curly braces
+snippet obw
+	{"${1}": ${2}}
+# Object string
+snippet obs
+	"${1}": "${2}"${3}
+# Nested object
 snippet obn
 	"${1}": {
 		${2}
-	}{$3}
-
+	}${3}
+# Array with object
 snippet arro
 	[
-		"{$1}": ${2}
-		${3}
+		{"${1}": ${2}}${3}
 	]
-
+# Array
+snippet arr
+	[
+		${1}
+	]${2}
 snippet s
 	"${1}": {
 		"type": "string"
