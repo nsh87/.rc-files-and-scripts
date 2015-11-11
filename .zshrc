@@ -41,9 +41,10 @@ DEFAULT=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin
 GIT=/usr/local/git/bin
 CANOPY=$HOME/Library/Enthought/Canopy_64bit/User/bin
 MONGODB=/usr/local/mongodb/bin
+BLAST=/usr/local/ncbi/blast/bin
 CUSTOM_SCRIPTS=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}'); print zshrc_path[:-6]+'scripts'")
 # PATH with Entought Canopy
-export PATH=$CANOPY:$DEFAULT:$GIT:$MONGODB:$CUSTOM_SCRIPTS
+export PATH=$CANOPY:$DEFAULT:$GIT:$MONGODB:$BLAST:$CUSTOM_SCRIPTS
 # PATH without Entought Canopy
 # export PATH=$DEFAULT:$GIT:$MONGODB:$CUSTOM_SCRIPTS
 
