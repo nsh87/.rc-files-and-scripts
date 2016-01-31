@@ -61,3 +61,6 @@
 [submodule "vim-bundles/vim-snippets"]
     path = vim-bundles/vim-snippets
     url = git://github.com/honza/vim-snippets.git
+[submodule "vim-bundles/vim-yaml"]
+    path = vim-bundles/vim-yaml
+    url = git://github.com/avakhov/vim-yaml.git
