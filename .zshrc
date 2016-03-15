@@ -28,7 +28,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins ar in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git virtualenvwrapper python autojump autopep8 brew dirhistory fabric jstontools pip urltools vagrant history vi-mode)
+plugins=(git virtualenvwrapper python autojump autopep8 brew dirhistory fabric jstontools pip urltools vagrant history vi-mode per-directory-history)
 
 # Autojump plugin
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && \
