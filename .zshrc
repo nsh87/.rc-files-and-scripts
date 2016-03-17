@@ -50,3 +50,9 @@ export PATH=$CANOPY:$DEFAULT:$GIT:$MONGODB:$BLAST:$CUSTOM_SCRIPTS
 
 # Travis-CI
 [ -f /Users/Nikhil/.travis/travis.sh ] && source /Users/Nikhil/.travis/travis.sh
+
+# Set VAGRANT_HOME on Mac Pro to be on your external drive
+if hostname | grep -q "NSMP"
+then
+    export VAGRANT_HOME=/Volumes/Raid/.vagrant.d
+fi
