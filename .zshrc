@@ -46,7 +46,7 @@ CUSTOM_SCRIPTS=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}')
 # PATH with Entought Canopy
 export PATH=$CANOPY:$DEFAULT:$GIT:$MONGODB:$BLAST:$CUSTOM_SCRIPTS
 # PATH without Entought Canopy
-# export PATH=$DEFAULT:$GIT:$MONGODB:$CUSTOM_SCRIPTS
+# export PATH=$DEFAULT:$GIT:$MONGODB:$BLAST:$CUSTOM_SCRIPTS
 
 # Travis-CI
 [ -f /Users/Nikhil/.travis/travis.sh ] && source /Users/Nikhil/.travis/travis.sh
