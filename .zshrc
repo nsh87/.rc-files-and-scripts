@@ -7,10 +7,7 @@ ZSH_THEME="robbyrussell"
 # Set any aliases
 alias gamsg='git add --all; git commit -m '
 alias path='. getdirfilepath.sh'
-alias vls='ls -al'
-alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias stoppostgres='pg_ctl -D /usr/local/var/postgres stop'
-alias startmongo='mongod --config /usr/local/etc/mongod.conf'
+alias ll='ls -alh'
 alias zshrc='vi ~/.zshrc'
 alias vimrc='vi ~/.vimrc'
 
@@ -37,16 +34,9 @@ plugins=(git virtualenvwrapper python autojump autopep8 brew dirhistory fabric j
 source $ZSH/oh-my-zsh.sh
 
 # PATH configuration
-DEFAULT=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin
-GIT=/usr/local/git/bin
-CANOPY=$HOME/Library/Enthought/Canopy_64bit/User/bin
-MONGODB=/usr/local/mongodb/bin
-BLAST=/usr/local/ncbi/blast/bin
+DEFAULT=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 CUSTOM_SCRIPTS=$(python -c "import os; zshrc_path=os.path.realpath('${(%):-%x}'); print zshrc_path[:-6]+'scripts'")
-# PATH with Entought Canopy
-export PATH=$CANOPY:$DEFAULT:$GIT:$MONGODB:$BLAST:$CUSTOM_SCRIPTS
-# PATH without Entought Canopy
-# export PATH=$DEFAULT:$GIT:$MONGODB:$BLAST:$CUSTOM_SCRIPTS
+export PATH=$DEFAULT:$CUSTOM_SCRIPTS
 
 # Travis-CI
 [ -f /Users/Nikhil/.travis/travis.sh ] && source /Users/Nikhil/.travis/travis.sh
